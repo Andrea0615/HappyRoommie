@@ -29,25 +29,28 @@ export default function ProblemSection() {
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
           {PROBLEM_CONTENT.cards.map((card, i) => (
             <div
-              key={card.title}
-              className={`group relative rounded-[1.75rem] border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-soft ${
-                i === 1 ? "md:mt-10 bg-ink text-white" : i === 2 ? "md:-mt-5" : ""
-              }`}
+              key={card.number}
+              className="group relative flex min-h-[16rem] flex-col rounded-[1.75rem] border border-ink/10 bg-white p-6 text-ink shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-coral/70 hover:shadow-soft"
             >
-              <span className={`absolute right-5 top-4 font-display text-5xl font-black ${i === 1 ? "text-white/10" : "text-ink/10"}`}>
-                0{i + 1}
+              <span
+                className="pointer-events-none absolute right-5 top-4 z-0 font-display text-5xl font-black leading-none text-ink/10"
+                aria-hidden="true"
+              >
+                {card.number}
               </span>
-              <KeyTag tone={i === 1 ? "coral" : "ink"}>
-                <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={1.6}>
-                  {ICONS[i]}
-                </svg>
-              </KeyTag>
-              <h3 className={`mt-5 font-display text-xl font-black ${i === 1 ? "text-white" : "text-ink"}`}>
-                {card.title}
-              </h3>
-              <p className={`mt-3 text-sm leading-relaxed ${i === 1 ? "text-white/[0.72]" : "text-ink/[0.65]"}`}>
-                {card.text}
-              </p>
+              <div className="relative z-10 flex flex-1 flex-col items-start">
+                <KeyTag tone="coral">
+                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={1.6}>
+                    {ICONS[i]}
+                  </svg>
+                </KeyTag>
+                <h3 className="mt-5 font-display text-xl font-black text-ink">
+                  {card.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-ink/[0.65]">
+                  {card.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

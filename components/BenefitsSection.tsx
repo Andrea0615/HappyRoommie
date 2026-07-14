@@ -20,47 +20,31 @@ export default function BenefitsSection() {
           {BENEFITS_CONTENT.cards.map((card, i) => (
             <div
               key={card.title}
-              className={`group flex min-h-[13.5rem] flex-col justify-between rounded-[1.5rem] p-6 shadow-card ring-1 ring-ink/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft sm:p-7 ${
-                i === 0
-                  ? "bg-ink text-white"
-                  : i === 2
-                    ? "bg-coral text-ink"
-                    : i === 1
-                      ? "bg-white text-ink"
-                      : "bg-sand text-ink"
-              }`}
+              className="group flex min-h-[13.5rem] flex-col justify-between rounded-[1.5rem] border border-ink/10 bg-[#FFF9EE] p-6 text-ink shadow-card ring-1 ring-white/70 transition-all duration-300 hover:-translate-y-1 hover:border-coral/80 hover:shadow-soft sm:p-7"
             >
               <div>
                 <div className="flex items-start justify-between gap-4">
-                  <KeyTag tone={i === 0 ? "coral" : i === 2 ? "ink" : "coral"} className="h-12 w-12">
+                  <KeyTag tone="coral" className="h-12 w-12">
                     <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={1.6}>
                       {ICONS[i]}
                     </svg>
                   </KeyTag>
                   <span
-                    className={`font-display text-4xl font-black leading-none ${
-                      i === 0 ? "text-white/10" : "text-ink/10"
-                    }`}
+                    className="font-display text-4xl font-black leading-none text-ink/10"
                     aria-hidden="true"
                   >
                     0{i + 1}
                   </span>
                 </div>
-                <h3 className={`mt-5 font-display text-2xl font-black leading-tight ${i === 0 ? "text-white" : "text-ink"}`}>
+                <h3 className="mt-5 font-display text-2xl font-black leading-tight text-ink">
                   {card.title}
                 </h3>
-                <p className={`mt-3 max-w-xl text-sm leading-relaxed ${i === 0 ? "text-white/[0.74]" : "text-ink/[0.68]"}`}>
+                <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink/[0.68]">
                   {card.text}
                 </p>
               </div>
 
-              {i === 0 ? (
-                <p className="mt-6 inline-flex w-fit rounded-full bg-white/10 px-4 py-2 text-xs font-bold text-coral ring-1 ring-white/10">
-                  Escríbenos por WhatsApp
-                </p>
-              ) : (
-                <span className="mt-6 h-1.5 w-16 rounded-full bg-ink/10" aria-hidden="true" />
-              )}
+              <span className="mt-6 h-1.5 w-16 rounded-full bg-coral" aria-hidden="true" />
             </div>
           ))}
         </div>

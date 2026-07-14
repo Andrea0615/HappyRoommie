@@ -14,10 +14,10 @@ export default function HowItWorks() {
         </div>
 
         <ol className="relative mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <span aria-hidden="true" className="absolute left-8 right-8 top-7 hidden h-1 rounded-full bg-coral lg:block" />
+          <span aria-hidden="true" className="absolute left-8 right-8 top-7 hidden h-1 rounded-full bg-ink/10 lg:block" />
           {HOW_IT_WORKS_CONTENT.steps.map((step) => (
-            <li key={step.number} className="relative rounded-[1.5rem] bg-white p-6 shadow-card ring-1 ring-ink/5 transition-transform duration-300 hover:-translate-y-1">
-              <KeyTag tone={step.number === "4" ? "ink" : "coral"}>{step.number}</KeyTag>
+            <li key={step.number} className="relative flex min-h-[15rem] flex-col rounded-[1.5rem] border border-ink/10 bg-[#FFF9EE] p-6 text-ink shadow-card ring-1 ring-white/70 transition-all duration-300 hover:-translate-y-1 hover:border-coral/80 hover:shadow-soft">
+              <KeyTag tone="coral">{step.number}</KeyTag>
               <h3 className="mt-5 font-display text-xl font-black text-ink">
                 {step.title}
               </h3>

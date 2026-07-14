@@ -18,16 +18,22 @@ export const PROBLEM_CONTENT = {
   title: "Mudarte para estudiar no debería sentirse como resolver todo a ciegas",
   cards: [
     {
+      number: "01",
       title: "No sabes por dónde comenzar",
-      text: "Encontrar zonas adecuadas cerca de tu universidad puede requerir tiempo y mucha búsqueda.",
+      description:
+        "Encontrar zonas adecuadas cerca de tu universidad puede requerir tiempo y mucha búsqueda.",
     },
     {
+      number: "02",
       title: "Necesitas una opción que se ajuste a ti",
-      text: "El presupuesto, la ubicación, el tipo de vivienda y la convivencia son factores importantes.",
+      description:
+        "El presupuesto, la ubicación, el tipo de vivienda y la convivencia son factores importantes.",
     },
     {
+      number: "03",
       title: "Quieres resolver tus dudas antes de decidir",
-      text: "Conocer mejor una propiedad o un posible roomie puede ayudarte a comparar opciones.",
+      description:
+        "Conocer mejor una propiedad o un posible roomie puede ayudarte a comparar opciones.",
     },
   ],
   closing:

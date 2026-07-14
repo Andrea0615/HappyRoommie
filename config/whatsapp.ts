@@ -15,34 +15,46 @@ export const WHATSAPP_DISPLAY = "+52 33 3399 0043";
 
 export const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
+export const STUDENT_WHATSAPP_MESSAGE =
+  "Hola! Vi su página y busco cuarto cerca del Tec. ¿Me pasan info y disponibilidad para agosto?";
+
+export const OWNER_WHATSAPP_MESSAGE =
+  "Hola, vi la página de Happy Roomie y quiero obtener información para publicar una propiedad.";
+
+export const OWNER_DETAILED_WHATSAPP_MESSAGE =
+  "Hola, vi la página de Happy Roomie y quiero obtener información para publicar una propiedad. La propiedad se encuentra en ______.";
+
 /**
  * Pre-filled messages by audience/context.
  * Keep these as the single source of truth for copy consistency.
  */
 export const WHATSAPP_MESSAGES = {
-  general:
-    "Hola, vi la página de Happy Roomie y me gustaría recibir más información.",
-  student:
-    "Hola, vi la página de Happy Roomie y estoy buscando dónde vivir. Me gustaría recibir información.",
-  studentDetailed:
-    "Hola, vi la página de Happy Roomie y estoy buscando dónde vivir. Mi universidad es ______ y mi presupuesto aproximado es ______.",
-  parent:
-    "Hola, vi la página de Happy Roomie y estoy buscando información de vivienda para un estudiante.",
-  parentDetailed:
-    "Hola, vi la página de Happy Roomie y estoy buscando información de vivienda para un estudiante. La universidad es ______.",
-  owner:
-    "Hola, vi la página de Happy Roomie y quiero obtener información para publicar una propiedad.",
-  ownerDetailed:
-    "Hola, vi la página de Happy Roomie y quiero obtener información para publicar una propiedad. La propiedad se encuentra en ______.",
-  faq: "Hola, vi la página de Happy Roomie y tengo una pregunta que no aparece en las preguntas frecuentes.",
+  general: STUDENT_WHATSAPP_MESSAGE,
+  student: STUDENT_WHATSAPP_MESSAGE,
+  studentDetailed: STUDENT_WHATSAPP_MESSAGE,
+  parent: STUDENT_WHATSAPP_MESSAGE,
+  parentDetailed: STUDENT_WHATSAPP_MESSAGE,
+  owner: OWNER_WHATSAPP_MESSAGE,
+  ownerDetailed: OWNER_DETAILED_WHATSAPP_MESSAGE,
+  faq: STUDENT_WHATSAPP_MESSAGE,
 } as const;
 
 export type WhatsAppMessageKey = keyof typeof WHATSAPP_MESSAGES;
+
+function encodeWhatsAppMessage(message: string): string {
+  return encodeURIComponent(message).replace(/[!'()*]/g, (character) =>
+    `%${character.charCodeAt(0).toString(16).toUpperCase()}`
+  );
+}
+
+export function getWhatsAppUrl(message: string): string {
+  return `${WHATSAPP_BASE_URL}?text=${encodeWhatsAppMessage(message)}`;
+}
 
 /**
  * Builds a correctly URL-encoded wa.me link for a given message key.
  */
 export function buildWhatsAppUrl(messageKey: WhatsAppMessageKey): string {
   const message = WHATSAPP_MESSAGES[messageKey];
-  return `${WHATSAPP_BASE_URL}?text=${encodeURIComponent(message)}`;
+  return getWhatsAppUrl(message);
 }
