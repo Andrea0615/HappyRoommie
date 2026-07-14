@@ -5,7 +5,7 @@ import { WHATSAPP_DISPLAY } from "@/config/whatsapp";
 
 // CANONICAL URL: intentionally driven by NEXT_PUBLIC_SITE_URL. Left empty
 // until this landing has its own domain. Never point this at
-// https://happyroomie.mx — this page is independent from the official site.
+// the official Happy Roomie site.
 const canonical = SITE_CONFIG.canonicalUrl || undefined;
 
 export const metadata: Metadata = {

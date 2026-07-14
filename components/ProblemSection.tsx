@@ -57,7 +57,7 @@ export default function ProblemSection() {
 
         <div className="mt-16 flex flex-col items-start gap-6 rounded-[2rem] bg-coral/95 px-6 py-8 shadow-soft ring-1 ring-ink/5 sm:px-10 lg:flex-row lg:items-center lg:justify-between">
           <p className="max-w-xl font-display text-2xl font-black leading-snug text-ink">
-            La forma más fácil de empezar es escribir lo que necesitas.
+            {PROBLEM_CONTENT.closing}
           </p>
           <WhatsAppButton
             messageKey="general"

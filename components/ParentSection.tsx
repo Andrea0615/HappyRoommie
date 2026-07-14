@@ -3,7 +3,7 @@ import WhatsAppButton from "./WhatsAppButton";
 
 export default function ParentSection() {
   return (
-    <section className="relative overflow-hidden bg-ink py-20 sm:py-28">
+    <section id="familias" className="relative scroll-mt-20 overflow-hidden bg-ink py-20 sm:py-28">
       <div aria-hidden="true" className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/10 to-transparent" />
       <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-sand/10 to-transparent" />
       <div aria-hidden="true" className="absolute -left-14 top-12 h-36 w-36 rounded-full border-[22px] border-coral/70" />
@@ -11,7 +11,7 @@ export default function ParentSection() {
       <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
         <div>
           <p className="mb-4 inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-coral">
-            Para familias
+            {PARENT_CONTENT.eyebrow}
           </p>
           <h2 className="font-display text-4xl font-black leading-tight text-white sm:text-5xl">
             {PARENT_CONTENT.title}
@@ -44,7 +44,7 @@ export default function ParentSection() {
           <div className="mt-9">
             <WhatsAppButton
               messageKey="parentDetailed"
-              analyticsEvent="whatsapp_click_parents"
+              analyticsEvent="whatsapp_click_families"
               variant="ghost"
             >
               {PARENT_CONTENT.cta}
@@ -56,7 +56,7 @@ export default function ParentSection() {
           <div className="aspect-[4/3] overflow-hidden rounded-[2rem] rounded-br-[6rem] border-8 border-white/10 bg-white shadow-soft">
             <img
               src="/images/apartment-family.png"
-              alt="Familia revisando una habitación moderna para estudiante"
+              alt={PARENT_CONTENT.imageAlt}
               className="h-full w-full object-cover"
             />
           </div>

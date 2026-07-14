@@ -4,7 +4,6 @@ import ProblemSection from "@/components/ProblemSection";
 import HowItWorks from "@/components/HowItWorks";
 import StudentSection from "@/components/StudentSection";
 import ParentSection from "@/components/ParentSection";
-import OwnerSection from "@/components/OwnerSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import TrustSection from "@/components/TrustSection";
 import FAQ from "@/components/FAQ";
@@ -23,7 +22,6 @@ export default function HomePage() {
         <HowItWorks />
         <StudentSection />
         <ParentSection />
-        <OwnerSection />
         <BenefitsSection />
         <TrustSection />
         <FAQ />

@@ -16,13 +16,10 @@ export const WHATSAPP_DISPLAY = "+52 33 3399 0043";
 export const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 export const STUDENT_WHATSAPP_MESSAGE =
-  "Hola! Vi su página y busco cuarto cerca del Tec. ¿Me pasan info y disponibilidad para agosto?";
+  "¡Hola! Vi su página y busco cuarto cerca del Tec Guadalajara. ¿Me pasan información y disponibilidad para agosto?";
 
-export const OWNER_WHATSAPP_MESSAGE =
-  "Hola, vi la página de Happy Roomie y quiero obtener información para publicar una propiedad.";
-
-export const OWNER_DETAILED_WHATSAPP_MESSAGE =
-  "Hola, vi la página de Happy Roomie y quiero obtener información para publicar una propiedad. La propiedad se encuentra en ______.";
+export const FAMILY_WHATSAPP_MESSAGE =
+  "¡Hola! Vi su página y busco vivienda para mi hijo cerca del Tec Guadalajara. ¿Me pasan información y disponibilidad para agosto?";
 
 /**
  * Pre-filled messages by audience/context.
@@ -32,10 +29,8 @@ export const WHATSAPP_MESSAGES = {
   general: STUDENT_WHATSAPP_MESSAGE,
   student: STUDENT_WHATSAPP_MESSAGE,
   studentDetailed: STUDENT_WHATSAPP_MESSAGE,
-  parent: STUDENT_WHATSAPP_MESSAGE,
-  parentDetailed: STUDENT_WHATSAPP_MESSAGE,
-  owner: OWNER_WHATSAPP_MESSAGE,
-  ownerDetailed: OWNER_DETAILED_WHATSAPP_MESSAGE,
+  parent: FAMILY_WHATSAPP_MESSAGE,
+  parentDetailed: FAMILY_WHATSAPP_MESSAGE,
   faq: STUDENT_WHATSAPP_MESSAGE,
 } as const;
 

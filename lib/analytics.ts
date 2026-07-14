@@ -13,14 +13,13 @@
  */
 
 export type AnalyticsEvent =
+  | "whatsapp_click_urgency_bar"
   | "whatsapp_click_header"
-  | "whatsapp_click_hero_student"
-  | "whatsapp_click_hero_owner"
+  | "whatsapp_click_hero"
   | "whatsapp_click_problem"
   | "whatsapp_click_how_it_works"
   | "whatsapp_click_students"
-  | "whatsapp_click_parents"
-  | "whatsapp_click_owners"
+  | "whatsapp_click_families"
   | "whatsapp_click_faq"
   | "whatsapp_click_final_cta"
   | "whatsapp_click_floating_button"

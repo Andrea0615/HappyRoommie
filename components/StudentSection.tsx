@@ -3,7 +3,7 @@ import WhatsAppButton from "./WhatsAppButton";
 
 export default function StudentSection() {
   return (
-    <section id="estudiantes" className="scroll-mt-20 bg-[linear-gradient(180deg,#FFF9EE_0%,#FFF9EE_64%,#FFFFFF_100%)] py-20 sm:py-28">
+    <section id="opciones-vivienda" className="scroll-mt-20 bg-[linear-gradient(180deg,#FFF9EE_0%,#FFF9EE_64%,#FFFFFF_100%)] py-20 sm:py-28">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.12fr_0.88fr] lg:px-8">
         <div className="relative order-2 lg:order-1">
           <div className="aspect-[4/5] w-full overflow-hidden rounded-[2rem] rounded-tr-[7rem] bg-white shadow-soft">
@@ -15,7 +15,7 @@ export default function StudentSection() {
           </div>
           <div className="absolute -bottom-8 left-6 max-w-sm rounded-[1.5rem] bg-white p-5 shadow-soft sm:left-10">
             <p className="font-display text-2xl font-black leading-tight text-ink">
-              Campus cerca, roomie ideal, dudas resueltas.
+              {STUDENT_CONTENT.imageCallout}
             </p>
           </div>
           <div aria-hidden="true" className="absolute -right-4 top-10 hidden h-28 w-28 rounded-full bg-coral md:block" />

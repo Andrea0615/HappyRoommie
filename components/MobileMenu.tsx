@@ -34,7 +34,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
             variant="primary"
             className="w-full"
           >
-            Hablar por WhatsApp
+            Consultar disponibilidad
           </WhatsAppButton>
         </div>
       </nav>

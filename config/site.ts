@@ -4,28 +4,28 @@
  * NOTE ON CANONICAL URL:
  * CANONICAL_URL is intentionally left configurable,
  * driven by an environment variable. It must NEVER be set to
- * https://happyroomie.mx — this landing is independent from the official
- * site and must not reference it anywhere, including SEO metadata.
+ * the official site — this landing is independent and must not reference it
+ * anywhere, including SEO metadata.
  */
 
 export const SITE_CONFIG = {
   name: "Happy Roomie",
-  title: "Happy Roomie | Encuentra vivienda y roomies cerca de tu universidad",
+  title: "Vivienda cerca del Tec Guadalajara | Happy Roomie",
   description:
-    "Conoce opciones de vivienda y roomies cerca de tu universidad con Happy Roomie. Escríbenos por WhatsApp y recibe información.",
+    "Consulta opciones de vivienda para estudiantes cerca del Tec de Monterrey Campus Guadalajara. Conoce disponibilidad para agosto por WhatsApp.",
   keywords: [
-    "vivienda para estudiantes",
-    "departamentos para estudiantes",
-    "habitaciones cerca de universidades",
-    "encontrar roomie",
-    "renta para estudiantes",
-    "vivienda universitaria",
+    "vivienda cerca del Tec Guadalajara",
+    "cuartos cerca del Tec de Monterrey Guadalajara",
+    "renta para estudiantes Tec Guadalajara",
+    "habitaciones para estudiantes Guadalajara",
+    "vivienda Tec Campus Guadalajara",
+    "cuarto amueblado cerca del Tec Guadalajara",
     "Happy Roomie",
   ],
   locale: "es_MX",
   // Set NEXT_PUBLIC_SITE_URL in your deployment environment
   // (e.g. Vercel project settings) once this landing has its own domain.
-  // This URL is independent from https://happyroomie.mx.
+  // This URL is independent from the official Happy Roomie site.
   canonicalUrl: process.env.NEXT_PUBLIC_SITE_URL || "",
   faviconPath: "/happy-roomie-icon.svg",
   ogImagePath: "/images/og-cover.jpg",

@@ -11,7 +11,7 @@ export default function MobileStickyCTA() {
         variant="primary"
         className="w-full"
       >
-        Hablar por WhatsApp
+        Consultar disponibilidad
       </WhatsAppButton>
     </div>
   );

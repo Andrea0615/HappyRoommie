@@ -11,7 +11,7 @@ export default function FinalCTA() {
           <div aria-hidden="true" className="absolute bottom-8 left-1/2 hidden h-20 w-40 rounded-full border-[14px] border-ink/10 md:block" />
           <div className="relative">
             <p className="mb-4 inline-flex rounded-full bg-white/70 px-4 py-2 text-sm font-bold text-ink">
-              Atención personalizada por WhatsApp
+              {FINAL_CTA_CONTENT.eyebrow}
             </p>
             <h2 className="max-w-2xl font-display text-4xl font-black leading-[1] text-ink sm:text-6xl">
               {FINAL_CTA_CONTENT.title}
@@ -40,10 +40,10 @@ export default function FinalCTA() {
               <div className="overflow-hidden rounded-[1.5rem] bg-sand p-4">
                 <div className="mb-4 h-6 rounded-full bg-white" />
                 <div className="ml-auto max-w-[82%] rounded-2xl rounded-tr-sm bg-coral px-4 py-3 text-sm font-bold text-ink">
-                  Hola, busco vivienda cerca de mi universidad.
+                  {FINAL_CTA_CONTENT.userMessage}
                 </div>
                 <div className="mt-3 max-w-[86%] rounded-2xl rounded-tl-sm bg-white px-4 py-3 text-sm font-semibold text-ink/75">
-                  Claro. Cuéntanos ciudad, universidad y presupuesto.
+                  {FINAL_CTA_CONTENT.replyMessage}
                 </div>
                 <div className="mt-4 flex gap-2">
                   <span className="h-2 w-2 rounded-full bg-ink/25" />

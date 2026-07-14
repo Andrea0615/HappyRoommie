@@ -5,7 +5,7 @@
  */
 export const NAV_LINKS = [
   { label: "Cómo funciona", href: "#como-funciona" },
-  { label: "Para estudiantes", href: "#estudiantes" },
-  { label: "Para propietarios", href: "#propietarios" },
+  { label: "Opciones de vivienda", href: "#opciones-vivienda" },
+  { label: "Para familias", href: "#familias" },
   { label: "Preguntas frecuentes", href: "#preguntas-frecuentes" },
 ] as const;

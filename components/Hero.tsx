@@ -3,7 +3,7 @@ import WhatsAppButton from "./WhatsAppButton";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[92vh] overflow-hidden bg-[linear-gradient(135deg,#FDD76C_0%,#FFE48E_54%,#FFF9EE_115%)] pt-28 pb-16 sm:pt-36 sm:pb-20">
+    <section className="relative min-h-[92vh] overflow-hidden bg-[linear-gradient(135deg,#FDD76C_0%,#FFE48E_54%,#FFF9EE_115%)] pb-16 pt-40 sm:pb-20 sm:pt-48">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute left-0 top-24 h-40 w-20 rounded-r-full bg-white/40"
@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
         <div className="motion-safe:animate-fade-up">
           <p className="mb-5 inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-ink shadow-card">
-            Vivienda y roomies cerca de tu universidad
+            {HERO_CONTENT.eyebrow}
           </p>
           <h1 className="max-w-3xl font-display text-[2.55rem] font-black leading-[1.02] text-ink sm:text-6xl lg:text-[4.35rem]">
             {HERO_CONTENT.title}
@@ -33,14 +33,14 @@ export default function Hero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <WhatsAppButton
               messageKey="student"
-              analyticsEvent="whatsapp_click_hero_student"
+              analyticsEvent="whatsapp_click_hero"
               variant="primary"
             >
               {HERO_CONTENT.primaryCta}
             </WhatsAppButton>
             <WhatsAppButton
-              messageKey="owner"
-              analyticsEvent="whatsapp_click_hero_owner"
+              messageKey="student"
+              analyticsEvent="whatsapp_click_hero"
               variant="secondary"
             >
               {HERO_CONTENT.secondaryCta}
@@ -61,13 +61,15 @@ export default function Hero() {
           </div>
           <div className="absolute -left-2 top-8 max-w-[14rem] rounded-[1.35rem] bg-white p-4 text-sm font-semibold text-ink shadow-soft ring-1 ring-ink/5 sm:-left-8">
             <p className="text-xs uppercase tracking-[0.16em] text-ink/45">WhatsApp</p>
-            <p className="mt-1">Hola, busco algo cerca de mi uni.</p>
-            <p className="mt-2 inline-flex rounded-full bg-coral px-3 py-1 text-xs">Te ayudamos hoy</p>
+            <p className="mt-1">{HERO_CONTENT.floatingMessage}</p>
+            <p className="mt-2 inline-flex rounded-full bg-coral px-3 py-1 text-xs">Opciones para agosto</p>
           </div>
           <div className="absolute -bottom-6 right-3 grid gap-2 rounded-[1.5rem] bg-ink p-4 text-sm font-bold text-white shadow-soft ring-1 ring-white/10 sm:right-8">
-            <span>Cerca de tu universidad</span>
-            <span className="text-coral">Opciones para estudiantes</span>
-            <span>Atención personalizada</span>
+            {HERO_CONTENT.highlights.map((highlight, index) => (
+              <span key={highlight} className={index === 1 ? "text-coral" : ""}>
+                {highlight}
+              </span>
+            ))}
           </div>
           <div aria-hidden="true" className="absolute -right-4 -top-5 h-24 w-24 rounded-full bg-white/[0.55]" />
         </div>

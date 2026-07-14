@@ -23,7 +23,7 @@ export default function FAQ() {
             {FAQ_CONTENT.title}
           </h2>
           <p className="relative mt-5 text-base leading-relaxed text-white/[0.72]">
-            Escríbenos qué ciudad, universidad o tipo de vivienda estás buscando y te orientamos por WhatsApp.
+            {FAQ_CONTENT.intro}
           </p>
           <div className="relative mt-8">
             <WhatsAppButton messageKey="faq" analyticsEvent="whatsapp_click_faq" variant="ghost">
