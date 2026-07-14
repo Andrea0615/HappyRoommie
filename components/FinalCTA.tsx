@@ -4,10 +4,10 @@ import WhatsAppButton from "./WhatsAppButton";
 
 export default function FinalCTA() {
   return (
-    <section className="relative overflow-hidden bg-white py-20 sm:py-28">
+    <section className="relative overflow-hidden bg-[linear-gradient(180deg,#FFF9EE_0%,#FFFFFF_36%,#FFFFFF_100%)] py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="relative grid overflow-hidden rounded-[2.5rem] bg-coral px-6 py-12 shadow-soft sm:px-10 lg:grid-cols-[1fr_0.72fr] lg:items-center lg:px-14 lg:py-16">
-          <div aria-hidden="true" className="absolute -left-12 top-12 h-28 w-28 rounded-full bg-white/55" />
+        <div className="relative grid overflow-hidden rounded-[2.5rem] bg-[linear-gradient(135deg,#FDD76C_0%,#FFE48E_100%)] px-6 py-12 shadow-soft ring-1 ring-ink/5 sm:px-10 lg:grid-cols-[1fr_0.72fr] lg:items-center lg:px-14 lg:py-16">
+          <div aria-hidden="true" className="absolute -left-12 top-12 h-28 w-28 rounded-full bg-white/[0.55]" />
           <div aria-hidden="true" className="absolute bottom-8 left-1/2 hidden h-20 w-40 rounded-full border-[14px] border-ink/10 md:block" />
           <div className="relative">
             <p className="mb-4 inline-flex rounded-full bg-white/70 px-4 py-2 text-sm font-bold text-ink">
@@ -16,7 +16,7 @@ export default function FinalCTA() {
             <h2 className="max-w-2xl font-display text-4xl font-black leading-[1] text-ink sm:text-6xl">
               {FINAL_CTA_CONTENT.title}
             </h2>
-            <p className="mt-5 max-w-xl text-lg font-medium leading-relaxed text-ink/72">
+            <p className="mt-5 max-w-xl text-lg font-medium leading-relaxed text-ink/[0.72]">
               {FINAL_CTA_CONTENT.text}
             </p>
 
@@ -29,7 +29,7 @@ export default function FinalCTA() {
               >
                 {FINAL_CTA_CONTENT.cta}
               </WhatsAppButton>
-              <p className="text-sm font-black tracking-wide text-ink/65">
+              <p className="text-sm font-black tracking-wide text-ink/[0.65]">
                 WhatsApp: {WHATSAPP_DISPLAY}
               </p>
             </div>

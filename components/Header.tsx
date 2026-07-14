@@ -9,7 +9,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 border-b border-ink/10 bg-sand/90 backdrop-blur-md">
+    <header className="fixed top-0 inset-x-0 z-50 border-b border-ink/10 bg-white/95 backdrop-blur-md">
       <div className="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo — intentionally NOT wrapped in a link or button anywhere. */}
         <div className="flex items-center select-none" aria-label="Happy Roomie">

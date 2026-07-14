@@ -3,7 +3,7 @@ import WhatsAppButton from "./WhatsAppButton";
 
 export default function OwnerSection() {
   return (
-    <section id="propietarios" className="scroll-mt-20 bg-sand py-20 sm:py-28">
+    <section id="propietarios" className="scroll-mt-20 bg-[linear-gradient(180deg,#FFF9EE_0%,#FFFFFF_52%,#FFF9EE_100%)] py-20 sm:py-28">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
         <div className="relative order-2 lg:order-1">
           <div className="aspect-[4/3] w-full overflow-hidden rounded-[2rem] rounded-tl-[6rem] bg-white shadow-soft">
@@ -19,7 +19,7 @@ export default function OwnerSection() {
               Muéstrala a estudiantes que ya están buscando.
             </p>
           </div>
-          <div aria-hidden="true" className="absolute -left-4 -top-4 h-24 w-24 rounded-full bg-coral" />
+          <div aria-hidden="true" className="absolute -left-4 -top-4 h-24 w-24 rounded-full bg-coral/90" />
         </div>
 
         <div className="order-1 lg:order-2">

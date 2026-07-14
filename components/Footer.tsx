@@ -14,7 +14,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-ink pb-28 pt-16 sm:pb-16">
+    <footer className="bg-[linear-gradient(180deg,#0A2A5C_0%,#082451_100%)] pb-28 pt-16 sm:pb-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-sm">

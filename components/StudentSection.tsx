@@ -3,7 +3,7 @@ import WhatsAppButton from "./WhatsAppButton";
 
 export default function StudentSection() {
   return (
-    <section id="estudiantes" className="scroll-mt-20 bg-sand py-20 sm:py-28">
+    <section id="estudiantes" className="scroll-mt-20 bg-[linear-gradient(180deg,#FFF9EE_0%,#FFF9EE_64%,#FFFFFF_100%)] py-20 sm:py-28">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.12fr_0.88fr] lg:px-8">
         <div className="relative order-2 lg:order-1">
           <div className="aspect-[4/5] w-full overflow-hidden rounded-[2rem] rounded-tr-[7rem] bg-white shadow-soft">
@@ -31,7 +31,7 @@ export default function StudentSection() {
 
           <ul className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-1">
             {STUDENT_CONTENT.benefits.map((benefit) => (
-              <li key={benefit} className="flex items-start gap-2.5 rounded-full bg-white px-4 py-3 text-sm font-semibold text-ink/75 shadow-card">
+              <li key={benefit} className="flex items-start gap-2.5 rounded-full bg-white px-4 py-3 text-sm font-semibold text-ink/75 shadow-card ring-1 ring-ink/5">
                 <svg
                   viewBox="0 0 24 24"
                   className="mt-0.5 h-5 w-5 shrink-0 text-ink"

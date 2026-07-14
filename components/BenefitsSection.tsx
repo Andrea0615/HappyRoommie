@@ -10,53 +10,60 @@ const ICONS = [
 
 export default function BenefitsSection() {
   return (
-    <section className="bg-white py-20 sm:py-28">
+    <section className="bg-[linear-gradient(180deg,#FFF9EE_0%,#FFFFFF_32%,#FFFFFF_100%)] py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="max-w-2xl font-display text-4xl font-black leading-tight text-ink sm:text-5xl">
           {BENEFITS_CONTENT.title}
         </h2>
 
-        <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-4 md:grid-rows-2">
+        <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
           {BENEFITS_CONTENT.cards.map((card, i) => (
             <div
               key={card.title}
-              className={`rounded-[1.75rem] p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-soft ${
+              className={`group flex min-h-[13.5rem] flex-col justify-between rounded-[1.5rem] p-6 shadow-card ring-1 ring-ink/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft sm:p-7 ${
                 i === 0
-                  ? "bg-ink text-white md:col-span-2 md:row-span-2 md:p-8"
+                  ? "bg-ink text-white"
                   : i === 2
-                    ? "bg-coral text-ink md:col-span-2"
-                    : "bg-sand text-ink"
+                    ? "bg-coral text-ink"
+                    : i === 1
+                      ? "bg-white text-ink"
+                      : "bg-sand text-ink"
               }`}
             >
-              <KeyTag tone={i % 2 === 0 ? "ink" : "coral"}>
-                <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={1.6}>
-                  {ICONS[i]}
-                </svg>
-              </KeyTag>
-              <h3 className={`mt-5 font-display font-black ${i === 0 ? "text-3xl text-white" : "text-xl text-ink"}`}>
-                {card.title}
-              </h3>
-              <p className={`mt-3 text-sm leading-relaxed ${i === 0 ? "text-white/72" : "text-ink/68"}`}>
-                {card.text}
-              </p>
+              <div>
+                <div className="flex items-start justify-between gap-4">
+                  <KeyTag tone={i === 0 ? "coral" : i === 2 ? "ink" : "coral"} className="h-12 w-12">
+                    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={1.6}>
+                      {ICONS[i]}
+                    </svg>
+                  </KeyTag>
+                  <span
+                    className={`font-display text-4xl font-black leading-none ${
+                      i === 0 ? "text-white/10" : "text-ink/10"
+                    }`}
+                    aria-hidden="true"
+                  >
+                    0{i + 1}
+                  </span>
+                </div>
+                <h3 className={`mt-5 font-display text-2xl font-black leading-tight ${i === 0 ? "text-white" : "text-ink"}`}>
+                  {card.title}
+                </h3>
+                <p className={`mt-3 max-w-xl text-sm leading-relaxed ${i === 0 ? "text-white/[0.74]" : "text-ink/[0.68]"}`}>
+                  {card.text}
+                </p>
+              </div>
+
+              {i === 0 ? (
+                <p className="mt-6 inline-flex w-fit rounded-full bg-white/10 px-4 py-2 text-xs font-bold text-coral ring-1 ring-white/10">
+                  Escríbenos por WhatsApp
+                </p>
+              ) : (
+                <span className="mt-6 h-1.5 w-16 rounded-full bg-ink/10" aria-hidden="true" />
+              )}
             </div>
           ))}
         </div>
-
-        {/*
-          Testimonials section — INTENTIONALLY DISABLED.
-          No real, confirmed testimonials exist yet. Do not enable this
-          block with invented quotes. Once real testimonials are approved,
-          uncomment and populate with genuine content (name, program/role,
-          and explicit consent to publish).
-
-          <div className="mt-16">
-            <h3 className="font-display text-2xl font-bold text-ink">
-              Lo que dicen quienes ya usaron Happy Roomie
-            </h3>
-            ...testimonial cards go here...
-          </div>
-        */}
       </div>
     </section>
   );

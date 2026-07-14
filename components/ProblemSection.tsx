@@ -13,9 +13,9 @@ const ICONS = [
 
 export default function ProblemSection() {
   return (
-    <section className="relative overflow-hidden bg-sand py-20 sm:py-28">
-      <div aria-hidden="true" className="absolute right-0 top-16 h-28 w-14 rounded-l-full bg-coral" />
-      <div aria-hidden="true" className="absolute bottom-16 left-8 hidden h-24 w-24 rounded-full border-[16px] border-ink/10 md:block" />
+    <section className="relative overflow-hidden bg-[linear-gradient(180deg,#FFF9EE_0%,#FFFFFF_48%,#FFF9EE_100%)] py-20 sm:py-28">
+      <div aria-hidden="true" className="absolute right-0 top-16 h-28 w-14 rounded-l-full bg-coral/80" />
+      <div aria-hidden="true" className="absolute bottom-16 left-8 hidden h-24 w-24 rounded-full border-[16px] border-ink/[0.08] md:block" />
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
           <h2 className="font-display text-4xl font-black leading-tight text-ink sm:text-5xl">
@@ -45,14 +45,14 @@ export default function ProblemSection() {
               <h3 className={`mt-5 font-display text-xl font-black ${i === 1 ? "text-white" : "text-ink"}`}>
                 {card.title}
               </h3>
-              <p className={`mt-3 text-sm leading-relaxed ${i === 1 ? "text-white/72" : "text-ink/65"}`}>
+              <p className={`mt-3 text-sm leading-relaxed ${i === 1 ? "text-white/[0.72]" : "text-ink/[0.65]"}`}>
                 {card.text}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 flex flex-col items-start gap-6 rounded-[2rem] bg-coral px-6 py-8 shadow-soft sm:px-10 lg:flex-row lg:items-center lg:justify-between">
+        <div className="mt-16 flex flex-col items-start gap-6 rounded-[2rem] bg-coral/95 px-6 py-8 shadow-soft ring-1 ring-ink/5 sm:px-10 lg:flex-row lg:items-center lg:justify-between">
           <p className="max-w-xl font-display text-2xl font-black leading-snug text-ink">
             La forma más fácil de empezar es escribir lo que necesitas.
           </p>

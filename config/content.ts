@@ -4,14 +4,12 @@
  */
 
 export const HERO_CONTENT = {
-  title: "Tu nuevo hogar universitario empieza aquí",
+  title: "Busca tu espacio ideal cerca del Tec",
   subtitle:
     "Encuentra vivienda, roomies y orientación cerca de tu universidad con atención directa por WhatsApp.",
   primaryCta: "Estoy buscando dónde vivir",
   secondaryCta: "Quiero publicar una propiedad",
   microcopy: "Respuesta personalizada para estudiantes, familias y propietarios.",
-  // Pending: replace with a real photo (students/roommates in a modern
-  // apartment or campus life). See "images to replace" list in the README.
   imageAlt:
     "Grupo de estudiantes conviviendo en un departamento moderno y luminoso",
 };
@@ -76,7 +74,6 @@ export const STUDENT_CONTENT = {
     "Información para comparar opciones.",
   ],
   cta: "Quiero encontrar vivienda",
-  // Pending: replace with a real photo of student housing / roommates.
   imageAlt: "Estudiante revisando opciones de vivienda cerca de su universidad",
 };
 
@@ -104,7 +101,6 @@ export const OWNER_CONTENT = {
     "Información sobre el proceso de publicación.",
   ],
   cta: "Quiero publicar mi propiedad",
-  // Pending: replace with a real photo of a room/apartment available to rent.
   imageAlt: "Departamento disponible para estudiantes",
 };
 
@@ -128,9 +124,6 @@ export const BENEFITS_CONTENT = {
       text: "Conoce alternativas y resuelve dudas antes de continuar con una opción.",
     },
   ],
-  // Testimonials are intentionally NOT included yet: no real testimonials
-  // have been confirmed. This section stays disabled until real content
-  // exists — see TrustSection.tsx for the commented placeholder.
 };
 
 export const TRUST_CONTENT = {

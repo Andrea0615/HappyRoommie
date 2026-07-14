@@ -4,8 +4,10 @@ import WhatsAppButton from "./WhatsAppButton";
 export default function ParentSection() {
   return (
     <section className="relative overflow-hidden bg-ink py-20 sm:py-28">
+      <div aria-hidden="true" className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/10 to-transparent" />
+      <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-sand/10 to-transparent" />
       <div aria-hidden="true" className="absolute -left-14 top-12 h-36 w-36 rounded-full border-[22px] border-coral/70" />
-      <div aria-hidden="true" className="absolute bottom-0 right-0 h-40 w-40 rounded-tl-full bg-coral" />
+      <div aria-hidden="true" className="absolute bottom-0 right-0 h-40 w-40 rounded-tl-full bg-coral/95" />
       <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
         <div>
           <p className="mb-4 inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-coral">
@@ -14,7 +16,7 @@ export default function ParentSection() {
           <h2 className="font-display text-4xl font-black leading-tight text-white sm:text-5xl">
             {PARENT_CONTENT.title}
           </h2>
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/72">
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/[0.72]">
             {PARENT_CONTENT.text}
           </p>
 

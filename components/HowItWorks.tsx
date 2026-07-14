@@ -4,7 +4,7 @@ import KeyTag from "./KeyTag";
 
 export default function HowItWorks() {
   return (
-    <section id="como-funciona" className="scroll-mt-20 bg-white py-20 sm:py-28">
+    <section id="como-funciona" className="scroll-mt-20 bg-[linear-gradient(180deg,#FFF9EE_0%,#FFFFFF_24%,#FFFFFF_78%,#FFF9EE_100%)] py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <h2 className="max-w-2xl font-display text-4xl font-black leading-tight text-ink sm:text-5xl">
@@ -16,12 +16,12 @@ export default function HowItWorks() {
         <ol className="relative mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <span aria-hidden="true" className="absolute left-8 right-8 top-7 hidden h-1 rounded-full bg-coral lg:block" />
           {HOW_IT_WORKS_CONTENT.steps.map((step) => (
-            <li key={step.number} className="relative rounded-[1.5rem] bg-sand p-6 shadow-card transition-transform duration-300 hover:-translate-y-1">
+            <li key={step.number} className="relative rounded-[1.5rem] bg-white p-6 shadow-card ring-1 ring-ink/5 transition-transform duration-300 hover:-translate-y-1">
               <KeyTag tone={step.number === "4" ? "ink" : "coral"}>{step.number}</KeyTag>
               <h3 className="mt-5 font-display text-xl font-black text-ink">
                 {step.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink/65">{step.text}</p>
+              <p className="mt-2 text-sm leading-relaxed text-ink/[0.65]">{step.text}</p>
             </li>
           ))}
         </ol>

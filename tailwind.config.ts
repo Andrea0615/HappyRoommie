@@ -33,8 +33,8 @@ const config: Config = {
         tag: "0.9rem",
       },
       boxShadow: {
-        soft: "0 18px 55px -24px rgba(10, 42, 92, 0.35)",
-        card: "0 18px 38px -24px rgba(10, 42, 92, 0.28)",
+        soft: "0 18px 50px -28px rgba(10, 42, 92, 0.32)",
+        card: "0 16px 34px -26px rgba(10, 42, 92, 0.24)",
       },
       keyframes: {
         "fade-up": {
