@@ -37,6 +37,27 @@ export default function Footer() {
             <p className="text-sm font-medium text-sand/70">
               WhatsApp: {WHATSAPP_DISPLAY}
             </p>
+            <a
+              href={FOOTER_CONTENT.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full text-sm font-semibold text-sand/70 transition-colors hover:text-sand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral/60"
+              aria-label={`Instagram de Happy Roomie: ${FOOTER_CONTENT.instagramHandle}`}
+            >
+              <svg
+                viewBox="0 0 24 24"
+                className="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.8}
+                aria-hidden="true"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+              {FOOTER_CONTENT.instagramHandle}
+            </a>
             <WhatsAppButton
               messageKey="general"
               analyticsEvent="whatsapp_click_final_cta"

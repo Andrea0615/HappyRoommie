@@ -10,26 +10,6 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-ink/10 bg-white/95 backdrop-blur-md">
-      <div className="bg-ink text-white">
-        <div className="mx-auto flex min-h-11 max-w-6xl flex-col items-center justify-center gap-2 px-4 py-2 text-center sm:flex-row sm:justify-between sm:px-6 lg:px-8">
-          <p className="text-sm font-bold leading-snug">
-            Cupos para <span className="text-coral">agosto</span> — asegura tu lugar.
-            <span className="ml-1 font-medium text-white/75">
-              Conoce las opciones disponibles cerca del Tec Guadalajara.
-            </span>
-          </p>
-          <WhatsAppButton
-            messageKey="general"
-            analyticsEvent="whatsapp_click_urgency_bar"
-            variant="ghost"
-            className="!px-4 !py-2 text-xs"
-            showIcon={false}
-          >
-            Consultar disponibilidad
-          </WhatsAppButton>
-        </div>
-      </div>
-
       <div className="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo — intentionally NOT wrapped in a link or button anywhere. */}
         <div className="flex items-center select-none" aria-label="Happy Roomie">

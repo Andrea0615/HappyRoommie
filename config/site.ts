@@ -10,9 +10,9 @@
 
 export const SITE_CONFIG = {
   name: "Happy Roomie",
-  title: "Vivienda cerca del Tec Guadalajara | Happy Roomie",
+  title: "Cuartos cerca del Tec Guadalajara | Happy Roomie",
   description:
-    "Consulta opciones de vivienda para estudiantes cerca del Tec de Monterrey Campus Guadalajara. Conoce disponibilidad para agosto por WhatsApp.",
+    "Revisa cuartos amueblados para estudiantes cerca del Tec de Monterrey, Campus Guadalajara. Consulta disponibilidad para agosto por WhatsApp.",
   keywords: [
     "vivienda cerca del Tec Guadalajara",
     "cuartos cerca del Tec de Monterrey Guadalajara",

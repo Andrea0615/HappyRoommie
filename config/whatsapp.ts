@@ -16,10 +16,10 @@ export const WHATSAPP_DISPLAY = "+52 33 3399 0043";
 export const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 export const STUDENT_WHATSAPP_MESSAGE =
-  "¡Hola! Vi su página y busco cuarto cerca del Tec Guadalajara. ¿Me pasan información y disponibilidad para agosto?";
+  "¡Hola! Busco un cuarto cerca del Tec Guadalajara. ¿Me pasan información y disponibilidad para agosto?";
 
 export const FAMILY_WHATSAPP_MESSAGE =
-  "¡Hola! Vi su página y busco vivienda para mi hijo cerca del Tec Guadalajara. ¿Me pasan información y disponibilidad para agosto?";
+  "¡Hola! Busco un espacio para mi hija o hijo cerca del Tec Guadalajara. ¿Me pasan información y disponibilidad para agosto?";
 
 /**
  * Pre-filled messages by audience/context.

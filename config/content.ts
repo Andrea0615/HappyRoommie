@@ -4,21 +4,19 @@
  */
 
 export const HERO_CONTENT = {
-  eyebrow: "Vivienda para estudiantes del Tec Guadalajara",
-  title: "Encuentra tu cuarto cerca del Tec de Monterrey Campus Guadalajara",
+  eyebrow: "Cuartos para estudiantes del Tec Guadalajara",
   subtitle:
-    "Conoce opciones de vivienda para estudiantes que se mudarán a Guadalajara. Consulta disponibilidad para agosto y recibe atención personalizada por WhatsApp.",
-  primaryCta: "Consultar disponibilidad para agosto",
-  secondaryCta: "Busco cuarto cerca del Tec",
-  microcopy: "Atención directa para estudiantes y familias.",
+    "Opciones amuebladas, cerca del campus y pensadas para estudiantes como tú.",
+  primaryCta: "Ver habitaciones disponibles",
+  microcopy: "Te acompañamos a ti y a tu familia por WhatsApp.",
   imageAlt:
-    "Estudiantes conversando en una vivienda cercana al Tec de Monterrey Campus Guadalajara",
+    "Estudiantes conversando en un espacio cercano al Tec de Monterrey, Campus Guadalajara",
   floatingMessage: "Hola, busco cuarto cerca del Tec Guadalajara para agosto.",
   highlights: [
-    "Cerca del Tec Guadalajara",
+    "Cerca del Tec de Monterrey, Campus Guadalajara",
     "Opciones para agosto",
     "Atención personalizada",
-    "Vivienda para estudiantes",
+    "Espacios amueblados",
   ],
 };
 
@@ -30,19 +28,19 @@ export const PROBLEM_CONTENT = {
       number: "01",
       title: "No sabes qué zonas están cerca del campus",
       description:
-        "Buscar desde otra ciudad puede hacer difícil comparar distancias, ubicaciones y opciones de vivienda.",
+        "Si vienes de otra ciudad, comparar distancias y ubicaciones puede sentirse confuso.",
     },
     {
       number: "02",
       title: "Necesitas una opción lista para tu llegada",
       description:
-        "El presupuesto, el mobiliario, los requisitos y la cercanía al Tec son factores importantes para elegir.",
+        "Tu presupuesto, el mobiliario, los requisitos y la cercanía al Tec influyen en tu decisión.",
     },
     {
       number: "03",
       title: "Quieres resolver tus dudas antes de mudarte",
       description:
-        "Recibir información clara sobre disponibilidad y condiciones facilita la decisión para estudiantes y familias.",
+        "Tú y tu familia pueden revisar disponibilidad y condiciones antes de avanzar.",
     },
   ],
   closing:
@@ -51,27 +49,27 @@ export const PROBLEM_CONTENT = {
 };
 
 export const HOW_IT_WORKS_CONTENT = {
-  title: "Encuentra tu espacio cerca del Tec Guadalajara",
+  title: "Así preparas tu llegada al Tec Guadalajara",
   steps: [
     {
       number: "1",
-      title: "Cuéntanos cuándo llegas",
-      text: "Escríbenos por WhatsApp e indícanos tu fecha de llegada, presupuesto y tipo de espacio.",
+      title: "Cuéntanos qué necesitas",
+      text: "Indica tu presupuesto, fecha de llegada, zona ideal y detalles importantes para ti.",
     },
     {
       number: "2",
-      title: "Conoce las opciones disponibles",
-      text: "Recibe información sobre habitaciones o espacios cercanos al Tec Guadalajara.",
+      title: "Recibe espacios compatibles",
+      text: "Te compartimos alternativas seleccionadas según tus preferencias y cercanía con el campus.",
     },
     {
       number: "3",
-      title: "Resuelve tus dudas",
-      text: "Pregunta por ubicación, mobiliario, requisitos, precio y disponibilidad.",
+      title: "Compara antes de decidir",
+      text: "Revisa fotografías, ubicación aproximada, servicios, precio y condiciones de cada lugar.",
     },
     {
       number: "4",
-      title: "Elige la opción que mejor se ajuste a ti",
-      text: "Compara alternativas y continúa el proceso con acompañamiento directo.",
+      title: "Avanza con confianza",
+      text: "Solicita la alternativa que más te guste y recibe acompañamiento para preparar tu llegada.",
     },
   ],
   cta: "Ver disponibilidad para agosto",
@@ -79,25 +77,25 @@ export const HOW_IT_WORKS_CONTENT = {
 
 export const STUDENT_CONTENT = {
   title: "Tu llegada al Tec Guadalajara empieza con un lugar donde sentirte cómodo",
-  text: "Happy Roomie te ayuda a conocer opciones de vivienda para estudiantes cerca del campus, de acuerdo con tu fecha de llegada, presupuesto y necesidades.",
+  text: "Con Happy Roomie puedes revisar espacios cerca del campus según tu fecha de llegada, presupuesto y necesidades.",
   benefits: [
-    "Opciones para estudiantes del Tec Guadalajara.",
-    "Información de ubicación para revisar cercanía al campus.",
-    "Características del espacio y posible mobiliario.",
-    "Alternativas para el semestre de agosto.",
-    "Información sobre requisitos y disponibilidad.",
-    "Atención directa por WhatsApp.",
+    "Revisa espacios pensados para estudiantes del Tec Guadalajara.",
+    "Ubica qué tan cerca estarías del campus.",
+    "Conoce servicios, mobiliario y características clave.",
+    "Consulta alternativas para el semestre de agosto.",
+    "Aclara requisitos y disponibilidad antes de decidir.",
+    "Habla directo con Happy Roomie por WhatsApp.",
   ],
   cta: "Busco cuarto cerca del Tec",
   imageAlt:
-    "Estudiante revisando opciones de vivienda para el Tec Guadalajara",
+    "Estudiante revisando espacios cerca del Tec Guadalajara",
   imageCallout: "Llegar a Guadalajara con más claridad.",
 };
 
 export const PARENT_CONTENT = {
   eyebrow: "Para madres y padres de familia",
-  title: "Más claridad antes de que tu hijo se mude a Guadalajara",
-  text: "Encontrar vivienda desde otra ciudad genera preguntas sobre ubicación, condiciones, presupuesto y disponibilidad. Happy Roomie facilita el primer contacto para conocer opciones cerca del Tec Guadalajara.",
+  title: "Más claridad antes de que tu hija o hijo se mude a Guadalajara",
+  text: "Acompaña la decisión con información sobre ubicación, condiciones, presupuesto y disponibilidad cerca del Tec de Monterrey, Campus Guadalajara.",
   benefits: [
     "Información sobre ubicación y cercanía al campus.",
     "Características del espacio.",
@@ -106,17 +104,17 @@ export const PARENT_CONTENT = {
     "Disponibilidad para agosto.",
     "Atención directa por WhatsApp.",
   ],
-  cta: "Solicitar información para mi hijo",
+  cta: "Solicitar información para mi hija o hijo",
   imageAlt:
-    "Familia revisando una opción de vivienda para estudiante del Tec Guadalajara",
+    "Familia revisando un espacio para estudiante del Tec Guadalajara",
 };
 
 export const BENEFITS_CONTENT = {
   title: "¿Por qué buscar tu espacio con Happy Roomie?",
   cards: [
     {
-      title: "Enfoque en el Tec Guadalajara",
-      text: "Información orientada a estudiantes que buscan vivienda cerca del campus.",
+      title: "Pensado para tu etapa en el Tec",
+      text: "Recibe información enfocada en mudarte cerca del Tec de Monterrey, Campus Guadalajara.",
     },
     {
       title: "Atención directa",
@@ -124,7 +122,7 @@ export const BENEFITS_CONTENT = {
     },
     {
       title: "Opciones para agosto",
-      text: "Consulta la disponibilidad actual para el próximo inicio de semestre.",
+      text: "Pregunta por disponibilidad para iniciar el semestre con tu alojamiento más claro.",
     },
     {
       title: "Información clara",
@@ -135,11 +133,11 @@ export const BENEFITS_CONTENT = {
 
 export const TRUST_CONTENT = {
   title: "Prepara tu llegada al Tec Guadalajara con más claridad",
-  text: "Comparte tu fecha de llegada, presupuesto y tipo de espacio. El equipo de Happy Roomie te orientará sobre las opciones disponibles para estudiantes.",
+  text: "Comparte tu fecha de llegada, presupuesto y tipo de espacio. Te orientamos sobre alternativas disponibles para estudiantes.",
   indicators: [
-    "Tec Guadalajara",
+    "Tec de Monterrey, Campus Guadalajara",
     "Disponibilidad para agosto",
-    "Vivienda para estudiantes",
+    "Espacios para estudiantes",
     "Cercanía al campus",
     "Atención por WhatsApp",
     "Información para familias",
@@ -154,7 +152,7 @@ export const FAQ_CONTENT = {
     {
       question: "¿Qué es Happy Roomie?",
       answer:
-        "Happy Roomie ayuda a estudiantes y familias a conocer opciones de vivienda cerca del Tec de Monterrey Campus Guadalajara.",
+        "Happy Roomie te ayuda a revisar espacios cerca del Tec de Monterrey, Campus Guadalajara, junto con tu familia si lo necesitas.",
     },
     {
       question: "¿Cómo puedo consultar disponibilidad?",
@@ -174,7 +172,7 @@ export const FAQ_CONTENT = {
     {
       question: "¿Las opciones están cerca del Tec Guadalajara?",
       answer:
-        "Las opciones se presentan con información de ubicación para que puedas revisar su cercanía al campus.",
+        "Te compartimos información de ubicación para que puedas revisar la cercanía con el campus.",
     },
     {
       question: "¿Las habitaciones están amuebladas?",
@@ -189,7 +187,7 @@ export const FAQ_CONTENT = {
     {
       question: "¿Happy Roomie garantiza una propiedad o contrato?",
       answer:
-        "No. Cada estudiante o familia debe revisar directamente las condiciones, documentación y contrato antes de tomar una decisión.",
+        "No. Tú y tu familia deben revisar directamente las condiciones, documentación y contrato antes de tomar una decisión.",
     },
   ],
   cta: "Consultar una duda por WhatsApp",
@@ -197,8 +195,8 @@ export const FAQ_CONTENT = {
 
 export const FINAL_CTA_CONTENT = {
   eyebrow: "Disponibilidad para agosto",
-  title: "Encuentra tu espacio cerca del Tec Guadalajara",
-  text: "Cuéntanos cuándo llegas, cuál es tu presupuesto y qué tipo de habitación estás buscando.",
+  title: "Llega a Guadalajara con tu alojamiento más claro",
+  text: "Cuéntanos cuándo llegas, cuál es tu presupuesto y qué tipo de espacio estás buscando.",
   cta: "Consultar disponibilidad para agosto",
   userMessage: "Hola, busco cuarto cerca del Tec Guadalajara para agosto.",
   replyMessage:
@@ -207,17 +205,19 @@ export const FINAL_CTA_CONTENT = {
 
 export const FOOTER_CONTENT = {
   description:
-    "Happy Roomie ayuda a estudiantes y familias a conocer opciones de vivienda cerca del Tec de Monterrey Campus Guadalajara.",
+    "Happy Roomie te ayuda a revisar espacios cerca del Tec de Monterrey, Campus Guadalajara, con información clara para ti y tu familia.",
   legalNotice:
-    "Happy Roomie facilita el contacto y la búsqueda de opciones. Cada estudiante o familia es responsable de revisar las condiciones, documentación y contratos relacionados con cualquier vivienda antes de tomar una decisión.",
+    "Happy Roomie facilita el contacto y la búsqueda de espacios. Tú y tu familia deben revisar condiciones, documentación y contratos antes de tomar una decisión.",
   privacyLinkLabel: "Aviso de privacidad",
   termsLinkLabel: "Términos y condiciones",
+  instagramHandle: "@happy.roomie.mx",
+  instagramUrl: "https://www.instagram.com/happy.roomie.mx/",
 };
 
 export const PRIVACY_MODAL_CONTENT = {
   title: "Aviso de privacidad",
   body: [
-    "Happy Roomie utiliza esta landing page únicamente como un canal informativo para invitar a estudiantes y familias a iniciar una conversación por WhatsApp.",
+    "Happy Roomie utiliza esta landing page únicamente como un canal informativo para que tú y tu familia inicien una conversación por WhatsApp.",
     "Esta página no incluye formularios, registros ni recolección de datos personales a través de este sitio. Cualquier información que compartas, como fecha de llegada, presupuesto o tipo de espacio, es proporcionada de forma voluntaria directamente en la conversación de WhatsApp.",
     "Este contenido es un marcador de posición general y debe ser sustituido por el aviso de privacidad oficial y vigente de Happy Roomie antes de su publicación definitiva.",
   ],
@@ -226,9 +226,9 @@ export const PRIVACY_MODAL_CONTENT = {
 export const TERMS_MODAL_CONTENT = {
   title: "Términos y condiciones",
   body: [
-    "Esta landing page es un canal de contacto independiente cuyo único objetivo es dirigir a estudiantes y familias hacia una conversación por WhatsApp con Happy Roomie.",
-    "La información presentada en esta página es de carácter general y no constituye una oferta, garantía ni compromiso contractual respecto a alguna vivienda, habitación o espacio en particular.",
-    "Cada estudiante o familia es responsable de revisar directamente las condiciones, documentación y contrato de cualquier vivienda antes de tomar una decisión.",
+    "Esta landing page es un canal de contacto independiente cuyo único objetivo es dirigirte a una conversación por WhatsApp con Happy Roomie.",
+    "La información presentada en esta página es de carácter general y no constituye una oferta, garantía ni compromiso contractual respecto a algún espacio en particular.",
+    "Tú y tu familia son responsables de revisar directamente las condiciones, documentación y contrato de cualquier espacio antes de tomar una decisión.",
     "Este contenido es un marcador de posición general y debe ser sustituido por los términos y condiciones oficiales y vigentes de Happy Roomie antes de su publicación definitiva.",
   ],
 };

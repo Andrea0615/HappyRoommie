@@ -3,7 +3,7 @@ import WhatsAppButton from "./WhatsAppButton";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[92vh] overflow-hidden bg-[linear-gradient(135deg,#FDD76C_0%,#FFE48E_54%,#FFF9EE_115%)] pb-16 pt-40 sm:pb-20 sm:pt-48">
+    <section className="relative min-h-[92vh] overflow-hidden bg-[linear-gradient(135deg,#FDD76C_0%,#FFE48E_54%,#FFF9EE_115%)] pb-16 pt-32 sm:pb-20 sm:pt-36">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute left-0 top-24 h-40 w-20 rounded-r-full bg-white/40"
@@ -18,32 +18,30 @@ export default function Hero() {
       />
       <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent via-sand/70 to-sand" />
 
-      <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+      <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-[0.92fr_1.08fr] lg:px-8">
         <div className="motion-safe:animate-fade-up">
-          <p className="mb-5 inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-ink shadow-card">
+          <p className="mb-6 inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-ink shadow-card">
             {HERO_CONTENT.eyebrow}
           </p>
-          <h1 className="max-w-3xl font-display text-[2.55rem] font-black leading-[1.02] text-ink sm:text-6xl lg:text-[4.35rem]">
-            {HERO_CONTENT.title}
+          <h1 className="max-w-2xl text-balance font-display text-[2.35rem] font-black leading-[1.08] text-ink sm:text-5xl lg:text-[3.85rem]">
+            Llega al{" "}
+            <span className="whitespace-nowrap text-ink-light">Tec Guadalajara</span>{" "}
+            con tu{" "}
+            <span className="inline bg-[linear-gradient(transparent_58%,rgba(255,249,238,0.92)_58%)] bg-[length:100%_100%] bg-no-repeat px-1 text-ink">
+              cuarto listo
+            </span>{"."}
           </h1>
-          <p className="mt-6 max-w-xl text-lg font-medium leading-relaxed text-ink/[0.78] sm:text-xl">
+          <p className="mt-7 max-w-xl text-lg font-medium leading-relaxed text-ink/[0.78] sm:text-xl">
             {HERO_CONTENT.subtitle}
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <WhatsAppButton
               messageKey="student"
               analyticsEvent="whatsapp_click_hero"
               variant="primary"
             >
               {HERO_CONTENT.primaryCta}
-            </WhatsAppButton>
-            <WhatsAppButton
-              messageKey="student"
-              analyticsEvent="whatsapp_click_hero"
-              variant="secondary"
-            >
-              {HERO_CONTENT.secondaryCta}
             </WhatsAppButton>
           </div>
 
